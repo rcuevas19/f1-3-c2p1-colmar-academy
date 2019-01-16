@@ -1,0 +1,631 @@
+/* Universal Styles */
+
+html {
+
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: whitesmoke;
+}
+
+h1 {
+    letter-spacing: 0.1em;
+}
+
+h2 {
+  letter-spacing: 0.05em
+}
+
+/* navigation bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background: white;
+  color: black;
+}
+
+.logo {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.logo .academy {
+  color: gray;
+}
+
+nav img {
+  height: 2rem;
+  width: auto;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+nav li a:hover {
+  color: grey;
+}
+
+nav ul li:last-child {
+  margin-right: 1.5rem;
+}
+
+.mobileNav {
+  display: none;
+}
+
+/* media query for mobile */
+
+@media only screen and (max-width: 450px){
+
+  .logo {
+    display: none;
+  }
+
+  .desktopNav {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .mobileNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobileNav a {
+    transition-property: opacity;
+    transition-duration: 500ms;
+  }
+
+  .mobileNav a:hover {
+    opacity: 0.5;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+}
+
+/* main banner */
+
+.banner {
+  background-color: rgb(216,216,216);
+  display: flex;
+}
+
+.banner img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-text {
+  display: flex;
+  color: #404040;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.banner-text h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4rem;
+}
+
+.second-heading {
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.banner-text h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.startbutton {
+  margin-top: 3rem;
+  background: #404040;
+  color: white;
+  font-weight: bold;
+  height: 2.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.startbutton a {
+  text-decoration: none;
+  color: white;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+.startbutton a:hover {
+  color: gainsboro;
+}
+
+/* media query for mobile banner */
+
+@media only screen and (max-width: 450px) {
+
+   .banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+  }
+
+  .banner img {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding:0;
+  }
+
+  .banner-text {
+    margin-right: 0;
+  }
+
+  .banner-text h1 {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+
+  .second-heading {
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+   .banner-text h2 {
+     margin-left: 1rem;
+     margin-bottom: 0;
+   }
+
+   .startbutton {
+     margin: 1.5rem 1rem 2rem 1rem;
+   }
+}
+
+
+/* keep practicing seciton */
+
+.information {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  color: darkslategrey;
+}
+
+.information-main {
+  padding: 0;
+  margin: 2rem 1.5rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.information-main img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.information-main h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  color: #404040;
+}
+
+.information-main p {
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.quote {
+  color: slategrey;
+  margin-bottom: 2rem;
+}
+
+.person-quoted {
+  margin-bottom: 2rem;
+}
+
+/* right column of keep practicing */
+
+.orientation-campus-lecture {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: whitesmoke;
+  color: #404040;
+  padding: 2rem 0;
+  margin: 0;
+  border-left: 2px solid gainsboro;
+}
+.orientation, .campus, .lecture {
+  display: flex;
+  border-bottom: 2px solid gainsboro;
+  background-color: whitesmoke;
+  color: #404040;
+}
+
+.campus {
+  margin-top: .125rem;
+  border-top: 2px solid gainsboro;
+}
+
+.ocl-image {
+  width: 35%;
+  height: auto;
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+.orientation img, .campus img, .lecture img {
+  width: 100%;
+  height: auto;
+}
+
+.campus img, .lecture img {
+  padding-top: 1rem;
+}
+
+.ocl-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.orientation-campus-lecture h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 .5rem .5rem 1rem;
+}
+
+.ocl-text h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 0 1rem .5rem 1rem;
+  line-height: 1.5;
+}
+
+.orientation-campus-lecture a {
+  color: cornflowerblue;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+.orientation-campus-lecture a:hover {
+  color: darkblue;
+}
+
+.lecture {
+  background-color: gainsboro;
+}
+
+/* mobile for keep praticing */
+
+@media only screen and (max-width: 450px){
+
+  .information-main {
+    display: none;
+  }
+
+  .orientation-campus-lecture {
+    width: 100%;
+    border-left: none;
+    margin: 0;
+  }
+
+  .orientation, .campus, .lecture {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .ocl-image {
+    width: 90%;
+    justify-content: center;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .ocl-text {
+    width: 100%;
+  }
+
+  .orientation-campus-lecture h3 {
+    text-align: left;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .orientation-campus-lecture h2 {
+    margin-left: 2rem;
+  }
+
+  .lecture {
+    background-color: whitesmoke;
+  }
+}
+
+/* start learning section */
+
+.learning {
+  background-color: rgb(234,235,236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4.5rem 2rem 4.5rem;
+}
+
+.learning h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #404040;
+}
+
+.class-set {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bottom-class-set {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subject {
+  background-color: whitesmoke;
+  padding-bottom: 1.5rem;
+  background-color: whitesmoke;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 30%;
+}
+
+.subject img {
+  width: 100%;
+  height:auto;
+}
+
+.subject h2 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: #404040;
+}
+
+.subject h3 {
+  margin-top: .5rem;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: slategray;
+}
+
+.subject p {
+  margin-left: 1rem;
+  color: slategray;
+  font-size: 1.5rem;
+  margin-top:.5rem;
+  margin-bottom: .5rem;
+}
+
+.learning.mobile {
+  display: none;
+}
+
+/* mobile start learning style */
+
+@media only screen and (max-width: 450px){
+
+    .learning.desktop {
+      display: none;
+    }
+
+    .learning.mobile {
+        width: 100%;
+        background-color: rgb(234,235,236);
+        display: block;
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+      }
+
+      .learning h1 {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 3rem;
+        color: #404040;
+        margin-bottom: 1rem;
+      }
+
+      .learning.mobile h2{
+        font-weight: normal;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem 0 1.5rem 1rem;
+        background-color: gainsboro;
+        margin-bottom: .5rem;
+    }
+}
+
+/* thesis exhibition */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.thesis h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #404040;
+}
+
+.video {
+  width: 60%;
+  margin-left: 1.5rem;
+  margin-right: .75rem;
+  margin-top: 0;
+}
+
+.thesis video {
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  background-color: gainsboro;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.thesis-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  margin-left: .75rem;
+}
+
+.thesis-fisma {
+  display: flex;
+  background-color: gainsboro;
+}
+
+.thesis-now-and-then {
+  display: flex;
+}
+
+.thesis-image {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.thesis-sidebar img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.sidebar-text h2 {
+  color: #404040;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.sidebar-text h3 {
+  font-size: 1.2rem;
+  color: slategray;
+  font-weight: lighter;
+  margin-bottom: .5rem;
+}
+
+/* mobile for thesis and reimagine urban */
+
+@media only screen and (max-width: 450px){
+
+  .thesis-sidebar {
+    display: none;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .reimagine-urban {
+    display: none;
+  }
+}
+
+/* reimagine urban quote */
+
+.reimagine-urban {
+  width: 60%;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.reimagine-urban h2 {
+   color: #404040;
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: .5rem;
+ }
+
+.reimagine-urban p {
+  font-size: 1.3rem;
+  margin-right: 2rem;
+  color: slategray;
+}
+
+/* copyright section */
+
+footer {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  color: slategray;
+  border-top: 2px solid gainsboro;
+}
